@@ -59,6 +59,9 @@ mybatis-plus:
   configuration:
     #开启下划线转驼峰
     map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
 
 
 # knife4j

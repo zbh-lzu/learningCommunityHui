@@ -77,6 +77,7 @@ public class QuickForumApplication implements WebMvcConfigurer, ApplicationRunne
         return connector -> connector.setPort(port);
     }
 
+
     @Override
     public void run(ApplicationArguments args) {
         // 设置类型转换, 主要用于mybatis读取varchar/json类型数据据，并写入到json格式的实体Entity中
@@ -88,4 +89,9 @@ public class QuickForumApplication implements WebMvcConfigurer, ApplicationRunne
         }
         log.info("启动成功，点击进入首页: {}", config.getHost());
     }
+
+
+
 }
+
+
